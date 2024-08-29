@@ -7,6 +7,12 @@ import tkinter as tk
 import face_recognition
 from PIL import Image, ImageTk
 
+import sys
+import os
+
+sys.path.append(os.path.join(os.getcwd(), 'Silent-Face-Anti-Spoofing'))
+from testSpoof import test
+
 class App:
     def __init__(self):
         self.mainWindow = tk.Tk()
@@ -59,29 +65,38 @@ class App:
             pass
 
     def login(self):
-        name = utils.recognize(self.mostRecentCaptureArr, self.dbDir)
+        label = test(
+                        image=self.mostRecentCaptureArr,
+                        model_dir='/Users/kourosh/GitHub/CV-Basics-Internship/Phase2_ML/Image-Classification/Face-Attendance/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
+                        device_id=0
+                        )
 
-        if name in ['unknown_person', 'no_persons_found']:
-            utils.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
+        if label == 1:
+            name = utils.recognize(self.mostRecentCaptureArr, self.dbDir)
+
+            if name in ['unknown_person', 'no_persons_found']:
+                utils.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
+            else:
+                utils.msg_box('Welcome back!', 'Welcome, {}.'.format(name))
+                with open(self.logPath, 'a') as f:
+                    f.write('{},{},in\n'.format(name, datetime.datetime.now()))
+                    f.close()
+
+                # Stop the webcam feed
+                self.stopWebcam()
+
+                # Hide login and register buttons
+                self.loginButtonMainWindow.place_forget()
+                self.registerNewUserButtonMainWindow.place_forget()
+
+                # Display user's image
+                self.display_user_image()
+
+                # Show logout button
+                self.logoutButtonMainWindow = utils.get_button(self.mainWindow, 'Logout', 'red', self.logout)
+                self.logoutButtonMainWindow.place(x=820, y=250)
         else:
-            utils.msg_box('Welcome back!', 'Welcome, {}.'.format(name))
-            with open(self.logPath, 'a') as f:
-                f.write('{},{},in\n'.format(name, datetime.datetime.now()))
-                f.close()
-
-            # Stop the webcam feed
-            self.stopWebcam()
-
-            # Hide login and register buttons
-            self.loginButtonMainWindow.place_forget()
-            self.registerNewUserButtonMainWindow.place_forget()
-
-            # Display user's image
-            self.display_user_image()
-
-            # Show logout button
-            self.logoutButtonMainWindow = utils.get_button(self.mainWindow, 'Logout', 'red', self.logout)
-            self.logoutButtonMainWindow.place(x=820, y=250)
+            utils.msg_box('Hey, you are a spoofer!', 'You are fake !')
 
     def display_user_image(self):
         imgtk = ImageTk.PhotoImage(image=self.mostRecentCapturePil)
