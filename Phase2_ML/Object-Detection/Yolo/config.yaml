@@ -1,7 +1,0 @@
-path: /Users/kourosh/GitHub/CV-Basics-Internship/Phase2_ML/Object-Detection/Yolo/Prepare-Data  # dataset root dir
-train: data/train  # train images (relative to 'path')
-val: data/test  # val images (relative to 'path')
-
-# Classes
-names:
-  0: alpaca
