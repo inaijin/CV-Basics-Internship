@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8n.yaml
+model: yolov8s.pt
 data: Prepare-Data/data/config.yaml
-epochs: 1
+epochs: 10
 time: null
 patience: 100
 batch: 16
@@ -47,7 +47,7 @@ source: null
 vid_stride: 1
 stream_buffer: false
 visualize: false
-augment: false
+augment: true
 agnostic_nms: false
 classes: null
 retina_masks: false
