@@ -13,7 +13,7 @@ ret, frame = cap.read()
 H, W, _ = frame.shape
 
 model_path = os.path.join(Path(__file__).resolve().parents[0],
-                          'runs', 'detect', 'train2', 'weights', 'best.pt')
+                          'runs', 'detect', 'train', 'weights', 'last.pt')
 
 # Load a model
 model = YOLO(model_path)  # load a custom model
