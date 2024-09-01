@@ -8,3 +8,4 @@ Phase2_ML/Object-Detection/Yolo/Prepare-Data/data
 Phase2_ML/Object-Detection/Yolo/Prepare-Data/validation-annotations-bbox.csv
 Phase2_ML/Object-Detection/Yolo/Prepare-Data/test-annotations-bbox.csv
 Phase2_ML/Object-Detection/Yolo/Prepare-Data/oidv6-train-annotations-bbox.csv
+Phase2_ML/Object-Detection/Plate-Recognition/data
