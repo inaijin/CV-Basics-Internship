@@ -11,3 +11,4 @@ Phase2_ML/Object-Detection/Yolo/Prepare-Data/oidv6-train-annotations-bbox.csv
 Phase2_ML/Object-Detection/Plate-Recognition/data
 Phase2_ML/Semantic-Segmentation/Datas
 Phase2_ML/Pose-Detection/Data
+Phase2_ML/Pose-Detection/Sign-Language/data
