@@ -15,3 +15,7 @@ Phase2_ML/Pose-Detection/Sign-Detection/data
 Phase2_ML/Semantic-Segmentation/Food-Detection/FoodSeg
 Phase2_ML/Projects/Datas
 Phase2_ML/Projects/Background-Remover/sam_vit_b_01ec64.pth
+Phase2_ML/Projects/Dreambooth-Stable-Diffusion/genImages
+Phase2_ML/Projects/Dreambooth-Stable-Diffusion/models
+Phase2_ML/Projects/Dreambooth-Stable-Diffusion/PicsTrain
+
