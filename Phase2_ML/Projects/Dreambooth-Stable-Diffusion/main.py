@@ -27,15 +27,14 @@ class App:
         self.main_section_label.place(x=600, y=90)
         self.main_img_label = tk.Label(self.main_window, width=500, height=500, bg='gray')
 
-    def display_selected_model(self):
+    def display_selected_model(self, _=None):
         self.selected_model = self.selected_model_.get()
 
-    def display_selected_style(self):
+    def display_selected_style(self, _=None):
         self.selected_style = self.selected_style_.get()
         if self.selected_style == 'CUSTOM PROMPT':
             self.custom_prompt_text_box.config(state="normal")
         else:
-            self.selected_style = self.selected_style_.get()
             self.custom_prompt_text_box.config(state="disabled")
 
     def refresh(self):
@@ -168,6 +167,7 @@ class App:
 
     def start_training(self):
         dataset_path = self.file_to_upload
+
         model_name = generate_random_string(5)
         output_dir = os.path.join(MODEL_DIR, model_name)
 
