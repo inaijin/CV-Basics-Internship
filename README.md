@@ -30,7 +30,7 @@ In this project, I developed an age-detection system using the **age_net** model
 - Apply the age model to the detected face regions to predict age.
 
 **Results**:  
-![Age-Detection Results](Datas/Results/Age-Detection/age-man.png)
+<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
 
 ### [Color Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Color-Detection)
 
@@ -43,7 +43,7 @@ This project focused on detecting a specific color in an image by converting it 
 - Draw a bounding box around the detected object.
 
 **Results**:  
-![Color-Detection Results](Datas/Results/Color-Detection/color-detected.png)
+<img src="Datas/Results/Color-Detection/color-detected.png" alt="Color-Detection Results" width="400"/>
 
 ### [Face Anonymizer](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Face-Anonymizer)
 
@@ -55,7 +55,7 @@ In this project, I implemented a face anonymization system where detected faces 
 - Apply Gaussian blur to the detected face regions.
 
 **Results**:  
-![Face-Anonymizer Results](Datas/Results/Face-Anonymizer/Face-Anonymizer.png)
+<img src="Datas/Results/Face-Anonymizer/Face-Anonymizer.png" alt="Face-Anonymizer Results" width="900"/>
 
 ### [Text Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Text-Detection)
 
@@ -68,7 +68,7 @@ This project aimed at detecting text in images using the **easyOCR** library. Th
 - Display the recognized text.
 
 **Results**:  
-![Text-Detection Results](Datas/Results/Text-Detection/Text-Detection.png)
+<img src="Datas/Results/Text-Detection/Text-Detection.png" alt="Text-Detection Results" width="555"/>
 
 ### [Tumor Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Tumor-Detection)
 
@@ -81,4 +81,4 @@ This project involved detecting tumors in brain scans using image processing tec
 - Use contour detection and thresholding to locate the tumor.
 
 **Results**:  
-![Tumor-Detection Results](Datas/Results/Tumor-Detection/Tumor-Detection.png)
+<img src="Datas/Results/Tumor-Detection/Tumor-Detection.png" alt="Tumor-Detection Results" width="400"/>
