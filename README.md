@@ -103,18 +103,20 @@ Image classification is the process of categorizing and labeling groups of pixel
 1. **[Face Attendance](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Image-Classification/Face-Attendance)**:  
    In this project, we built a face attendance system using the **face_recognition** library and **Silent-Face-Anti-Spoofing**. The system recognizes faces, stores them in a database, and allows users to log in with their faces. To prevent spoofing (e.g., using a photo), the anti-spoofing system ensures that only real faces are accepted.  
    [Link to Silent-Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
-**Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+   
+   **Results**:  
+   <img src="Datas/Results/Image-Classification/Face-Attendance/face-attendance.png" alt="Face-Attendance Results" width="555"/>
 
 3. **[Parking Lot Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Image-Classification/Parking-Lot)**:  
    This project involved training a machine learning model (Support Vector Machine - SVM) to classify parking spots as either **empty** or **occupied**. The model was trained using images of parking spots, and it was applied in real-time to detect the status of parking spots in a lot.
 **Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+![Parking-Lot Results](Datas/Results/Image-Classification/Parking-Lot/parking-lot.gif)
 
 5. **[Weather Condition Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Image-Classification/Wheather)**:  
    We used **YOLOv8** to train a classifier that detects weather conditions (e.g., rainy, sunny, cloudy). The classifier could distinguish between various weather conditions in real-time using pre-labeled weather data.
-**Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+   
+   **Results**:  
+   <img src="Datas/Results/Image-Classification/Wheather/wheather.png" alt="Weather-Condition Results" width="555"/>
 
 ### [Object Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Object-Detection)
 
@@ -124,8 +126,9 @@ Object detection is the task of detecting instances of objects of a certain clas
 **Project**:
 - **[License Plate and Car Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Object-Detection/Plate-Recognition)**:  
    In this project, we used **YOLOv8** to train an object detection model that could detect license plates. Pre-trained YOLOv8 models (coco) were used to detect cars, and Optical Character Recognition (OCR) was implemented to read the detected license plates in real-time from video footage.
-**Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+  
+   **Results**:  
+   ![License-Plate Results](Datas/Results/Image-Classification/Parking-Lot/parking-lot.gif)
 
 ### [Pose Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Pose-Detection)
 
@@ -135,8 +138,9 @@ Pose detection is a computer vision technique used to estimate the positions of 
 **Project**:
 - **[Gesture Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Pose-Detection/Sign-Detection)**:  
    We trained a pose detection model using **YOLOv8** to extract hand position data. Then, using a **Random Forest** machine learning model, we trained the system to recognize hand gestures. This system can be extended to detect sign language, but we used it for detecting simple gestures.
-**Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+  
+   **Results**:  
+   <img src="Datas/Results/Pose-Detection/Sign-Detection/Sign-Detection.png" alt="Gesture-Detection Results" width="350"/>
 
 ### [Semantic Segmentation](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Semantic-Segmentation)
 
@@ -146,5 +150,6 @@ Semantic segmentation is the process of partitioning an image into multiple segm
 **Project**:
 - **[Food Segmentation](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Semantic-Segmentation/Food-Detection)**:  
    In this project, we trained a **YOLOv8 segmentation model** to detect and segment different types of food on a plate or dish. The model was able to identify different food items and segment them out for detailed analysis.
-**Results**:  
-<img src="Datas/Results/Age-Detection/age-man.png" alt="Age-Detection Results" width="555"/>
+  
+   **Results**:  
+   <img src="Datas/Results/Semantic-Segmentation/Food-Detection/food-detection.png" alt="Food-Seg Results" width="555"/>
