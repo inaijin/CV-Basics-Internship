@@ -22,11 +22,11 @@ In this phase, I focused on the fundamentals of image processing, learning to wo
 ### [Age Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Age-Detection)
 
 **Description**:  
-In this project, I developed an age-detection system using the **age_net** model from OpenCV's deep learning module (`cv2.dnn.readNet`). The model predicts the age range of a person from an image, using pre-trained weights.
+In this project, I developed an age-detection system using the **age_net** model from OpenCV's deep learning module (cv2.dnn.readNet). The model predicts the age range of a person from an image, using pre-trained weights.
 
 **Steps**:
 - Load the **age_net** model.
-- Perform face detection using OpenCV's `cv2.CascadeClassifier`.
+- Perform face detection using OpenCV's cv2.CascadeClassifier.
 - Apply the age model to the detected face regions to predict age.
 
 **Results**:  
@@ -38,7 +38,7 @@ In this project, I developed an age-detection system using the **age_net** model
 This project focused on detecting a specific color in an image by converting it to the **HSV color space**. A bounding box was drawn around the detected object to highlight the color.
 
 **Steps**:
-- Convert the image to the HSV color space using `cv2.cvtColor()`.
+- Convert the image to the HSV color space using cv2.cvtColor().
 - Use a color range mask to filter the target color.
 - Draw a bounding box around the detected object.
 
@@ -48,7 +48,7 @@ This project focused on detecting a specific color in an image by converting it 
 ### [Face Anonymizer](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase1_Image_Processing/Projects/Face-Anonymizer)
 
 **Description**:  
-In this project, I implemented a face anonymization system where detected faces were blurred to hide identities. I used **MediaPipe's Face Detection** (`faceDetectionMP.FaceDetection`) for detecting faces.
+In this project, I implemented a face anonymization system where detected faces were blurred to hide identities. I used **MediaPipe's Face Detection** (faceDetectionMP.FaceDetection) for detecting faces.
 
 **Steps**:
 - Detect faces in the image using MediaPipe.
@@ -109,8 +109,9 @@ Image classification is the process of categorizing and labeling groups of pixel
 
 3. **[Parking Lot Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Image-Classification/Parking-Lot)**:  
    This project involved training a machine learning model (Support Vector Machine - SVM) to classify parking spots as either **empty** or **occupied**. The model was trained using images of parking spots, and it was applied in real-time to detect the status of parking spots in a lot.
-**Results**:  
-![Parking-Lot Results](Datas/Results/Image-Classification/Parking-Lot/parking-lot.gif)
+
+   **Results**:  
+   ![Parking-Lot Results](Datas/Results/Image-Classification/Parking-Lot/parking-lot.gif)
 
 5. **[Weather Condition Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Image-Classification/Wheather)**:  
    We used **YOLOv8** to train a classifier that detects weather conditions (e.g., rainy, sunny, cloudy). The classifier could distinguish between various weather conditions in real-time using pre-labeled weather data.
@@ -128,7 +129,7 @@ Object detection is the task of detecting instances of objects of a certain clas
    In this project, we used **YOLOv8** to train an object detection model that could detect license plates. Pre-trained YOLOv8 models (coco) were used to detect cars, and Optical Character Recognition (OCR) was implemented to read the detected license plates in real-time from video footage.
   
    **Results**:  
-   ![License-Plate Results](Datas/Results/Image-Classification/Parking-Lot/parking-lot.gif)
+   ![License-Plate Results](Datas/Results/Object-Detection/Plate-Recognition/plate-recognition.gif)
 
 ### [Pose Detection](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Pose-Detection)
 
@@ -152,4 +153,54 @@ Semantic segmentation is the process of partitioning an image into multiple segm
    In this project, we trained a **YOLOv8 segmentation model** to detect and segment different types of food on a plate or dish. The model was able to identify different food items and segment them out for detailed analysis.
   
    **Results**:  
-   <img src="Datas/Results/Semantic-Segmentation/Food-Detection/food-detection.png" alt="Food-Seg Results" width="555"/>
+   <img src="Datas/Results/Semantic-Segmentation/Food-Detection/food-detection.png" alt="Food-Seg Results" width="700"/>
+
+## Fun and Practical Projects
+
+In addition to the structured projects, we also worked on some fun and practical projects that applied various machine learning techniques to real-world scenarios.
+
+### 1. [Background Remover](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Projects/Background-Remover)
+
+   **Description**:  
+   This project used the **segment_anything** library to build a web application with **Streamlit** that removes the background from images. By allowing users to click on the part of the image they want to remove, the model improves accuracy and prevents unwanted elements from being considered as the background. This interaction made the background removal process more user-friendly and precise.
+
+   **Results**:  
+   <img src="Datas/Results/Phase2-Projects/BG-Remover/bg-remover.png" alt="BG-Remover Results" width="700"/>
+
+### 2. [Stable Diffusion / Dreambooth](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Projects/Dreambooth-Stable-Diffusion)
+
+   **Description**:  
+   In this project, we fine-tuned a **Stable Diffusion** model using **Dreambooth** with our own face, allowing us to generate creative and personalized images. The fine-tuning process was done both locally and via cloud services, offering flexibility. This project demonstrated how Dreambooth can be used to personalize image generation in a fun way.
+
+   **Results**:  
+   <img src="Datas/Results/Phase2-Projects/DreamBooth/monster.png" alt="dreambooth Results" width="700"/>
+
+### 3. [Face Analyzer](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Projects/Face-Analysis)
+
+   **Description**:  
+   Using the **deepface** library, we built a face analysis web application that performed the following tasks:
+   1. **Face Recognition**: Checks if the person in front of the camera matches the input image.
+   2. **Similarity Check**: Measures how similar the person is to others in a database.
+   3. **Facial Analysis**: Analyzes features like age, gender, race, etc., providing detailed information about the person’s face.
+
+   **Results**:  
+   <img src="Datas/Results/Phase2-Projects/Face-Analysis/Screenshot 2024-09-17 at 7.12.00 PM.png" alt="Face-Analyzer Results" width="555"/>
+
+### 4. [Image Captioning](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Projects/Image-Captioning)
+
+   **Description**:  
+   This project involved using **Stable Diffusion** models to create a web app that generates captions for images. Initially developed using **Tkinter**, the project later transitioned to **Streamlit** for a more refined user experience. The model could describe the content of images and provide detailed captions, running locally for convenience.
+
+   **Results**:  
+   <img src="Datas/Results/Phase2-Projects/Image-Captioning/image-captioning.png" alt="Image-Cap Results" width="700"/>
+
+### 5. [Image Generation](https://github.com/inaijin/CV-Basics-Internship/tree/main/Phase2_ML/Projects/Image-Generation)
+
+   **Description**:  
+   We developed a local web application for AI-based image generation using **Stable Diffusion**. The app allows users to input specific prompts to generate high-quality images. This provides a free, local alternative to paid online services, although more precise prompts yield better results.
+
+   **Results**:  
+   <img src="Datas/Results/Phase2-Projects/Image-Generation/image-gen.png" alt="Image-Gen Results" width="700"/>
+
+## Contributing
+Feel free to fork this repository, open issues, or submit pull requests. Any contributions are welcome!
